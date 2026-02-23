@@ -1,10 +1,10 @@
 val name: String = "James"
-var greeting: String = "hello"
+var greeting: String? = "hello"
 
 fun main() {
     println(name)
     println(greeting)
 
-    greeting = "hi"
+    greeting = null
     println(name + " says " + greeting)
 }
