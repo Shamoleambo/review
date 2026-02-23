@@ -1,3 +1,10 @@
+val name: String = "James"
+var greeting: String = "hello"
+
 fun main() {
-    println("Hello Kotlin")
+    println(name)
+    println(greeting)
+
+    greeting = "hi"
+    println(name + " says " + greeting)
 }
