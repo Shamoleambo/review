@@ -3,13 +3,11 @@ var greeting: String? = "hello"
 
 fun main() {
 
-    when(greeting){
-        null -> println("Oh snap")
-        "hello" -> println(greeting)
+    val greetingToPrint = when (greeting) {
+        null -> "Hi"
+        else -> greeting
     }
-    println(name)
-    println(greeting)
 
-    greeting = null
-    println(name + " says " + greeting)
+    println(greetingToPrint)
+
 }
