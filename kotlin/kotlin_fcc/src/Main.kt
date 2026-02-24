@@ -1,13 +1,9 @@
-val name: String = "James"
-var greeting: String? = "hello"
+fun sayHelloTo(word: String): String {
+    val hello = "Hello " + word
+    return hello
+}
 
 fun main() {
 
-    val greetingToPrint = when (greeting) {
-        null -> "Hi"
-        else -> greeting
-    }
-
-    println(greetingToPrint)
-
+    println(sayHelloTo("Tiago"))
 }
